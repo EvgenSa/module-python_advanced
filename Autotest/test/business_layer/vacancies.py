@@ -52,9 +52,9 @@ class Vacancies(Page):
                 if "Python" in j.text:
                     self.vacancies_link.append(j["href"])
 
-if __name__ == '__main__':
-    page = Page()
-    page.create_page()
-    jobs = Vacancies()
-    jobs.search_vacancies_link()
-    print(*jobs.vacancies_link, sep='\n')
+# if __name__ == '__main__':
+#     page = Page()
+#     page.create_page()
+#     jobs = Vacancies()
+#     jobs.search_vacancies_link()
+#     print(*jobs.vacancies_link, sep='\n')
